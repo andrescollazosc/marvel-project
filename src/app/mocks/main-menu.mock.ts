@@ -4,10 +4,6 @@ export class MainMenuMock {
     public static getItemsMenu(): MainMenuModel[]{
         return [
             {
-                routerPath: 'home',
-                labelItem: 'home'
-            },
-            {
                 routerPath: 'dash',
                 labelItem: 'DashBoard'
             },
