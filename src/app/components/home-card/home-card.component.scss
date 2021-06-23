@@ -1,4 +1,5 @@
 @import '../../styles/typography';
+@import '../../styles/colors';
 .home-card-container {
     display: flex;
     flex-direction: row;
@@ -23,7 +24,8 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 1.5;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        flex-grow: 2;
     }
     &__image-container {
         width: 50%;
@@ -47,7 +49,7 @@
         }
         &__image-container {
             width: 100%;
-            height: 200px;
+            height: 150px;
             cursor: pointer;
         }
         &__image-container img {
@@ -59,4 +61,34 @@
             border-top-left-radius: 6px;
         }
     }
+}
+
+.button {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.button-marvel {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: $red-marvel-color;
+    border-color: $red-marvel-color;
+    color: #fff;
+}
+
+.button-marvel:hover {
+    filter: brightness(80%);
 }
