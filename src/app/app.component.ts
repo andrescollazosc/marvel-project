@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MainMenuMock } from './mocks/main-menu.mock';
+import { MainMenuModel } from './models/main-menu.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public mainMenuModel: MainMenuModel[] = MainMenuMock.getItemsMenu();
+  
   title = 'Train-Marvel';
+
+
+
 }

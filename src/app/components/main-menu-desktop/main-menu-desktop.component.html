@@ -1,9 +1,7 @@
 <nav class="main-menu-container">
     <ul class="main-menu-container__items container">
-        <li class="main-menu-container__tab-item">Home</li>
-        <li class="main-menu-container__tab-item" routerLink="characters">
-            Characters
+        <li *ngFor="let item of mainMenuModel" class="main-menu-container__tab-item" [routerLink]="item.routerPath">
+            {{ item.labelItem }}
         </li>
-        <li class="main-menu-container__tab-item">Stories</li>
     </ul>
 </nav>
