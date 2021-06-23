@@ -7,6 +7,7 @@ import { FirstCardsComponent } from './components/first-cards/first-cards.compon
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { MainMenuDesktopComponent } from './components/main-menu-desktop/main-menu-desktop.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainMenuDesktopComponent } from './components/main-menu-desktop/main-me
     FirstCardsComponent,
     CharactersComponent,
     DashboardComponent,
-    MainMenuDesktopComponent
+    MainMenuDesktopComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

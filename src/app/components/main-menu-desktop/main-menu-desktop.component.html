@@ -1,6 +1,6 @@
 <nav class="main-menu-container">
     <ul class="main-menu-container__items container">
-        <li *ngFor="let item of mainMenuModel" class="main-menu-container__tab-item" [routerLink]="item.routerPath">
+        <li *ngFor="let item of mainMenuModel" [ngClass]="{'active': item.itemActivated}" class="main-menu-container__tab-item" (click)="activeItem(item)" [routerLink]="item.routerPath">
             {{ item.labelItem }}
         </li>
     </ul>
