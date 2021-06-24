@@ -9,6 +9,7 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { MainMenuDesktopComponent } from './components/main-menu-desktop/main-menu-desktop.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HomeCardComponent } from './components/home-card/home-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeCardComponent } from './components/home-card/home-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

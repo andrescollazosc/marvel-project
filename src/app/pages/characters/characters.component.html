@@ -1,2 +1,5 @@
-Characters component!!!
-<app-first-cards></app-first-cards>
+<i *ngIf="!isLoading" class="fas fa-circle-notch fa-spin fa-7x"></i>
+
+<div *ngIf="isLoading" class="row">
+    <app-first-cards *ngFor="let item of response.data?.results" [title]="item.name" [urlImage]="item.thumbnail.path" [extension]="item.thumbnail.extension" class="col-12 col-sm-12 col-md-5 col-lg-4"></app-first-cards>
+</div>

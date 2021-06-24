@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-first-cards',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstCardsComponent implements OnInit {
 
-  constructor() { }
+  @Input() urlImage: string="";
+  @Input() extension: string ="";
+  @Input() title: string ="";
+
+  public pathImg: string ="";
+
+  constructor() {}
 
   ngOnInit(): void {
+    if (this.urlImage === "" || this.urlImage === null) {
+      this.pathImg="../assets/img/Marvel-comics-logo-vector.png";
+    }else {
+      this.pathImg = `${this.urlImage}.${this.extension}`;
+    }
   }
 
 }
