@@ -14,7 +14,9 @@ export class MainMenuDesktopComponent implements OnInit {
   ngOnInit(): void {}
 
   public activeItem(value: MainMenuModel): void {
-    const mainMenuIdex = this.mainMenuModel.findIndex(x => x.routerPath === value.routerPath);
+    const mainMenuIdex = this.mainMenuModel.findIndex(
+      (x) => x.routerPath === value.routerPath
+    );
 
     this.mainMenuModel.forEach((item, index) => {
       item.itemActivated = mainMenuIdex === index ? 'active' : '';

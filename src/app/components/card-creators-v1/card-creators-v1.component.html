@@ -1,0 +1,17 @@
+<div class="card-creator-container">
+    <div class="card-creator-container__image-container">
+        <img [src]="cardConfig.img" alt="">
+    </div>
+    <div class="card-creator-container__panel-container">
+        <div class="card-creator-container__name">{{ cardConfig.name }}</div>
+        <div class="card-creator-container__title">{{ cardConfig.title }}</div>
+    </div>
+    <div class="social-media">
+        <a [href]="cardConfig.socialMediaLinkeIn" target="_blank" class="link-to">
+            <i class="fab fa-linkedin icon"></i>
+        </a>
+        <a [href]="cardConfig.socialMediaGitHub" target="_blank" class="link-to">
+            <i class="fab fa-github icon"></i>
+        </a>
+    </div>
+</div>
