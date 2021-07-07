@@ -19,7 +19,7 @@ export class CardCreatorsV1Mock {
                 name: 'Andres Collazos',
                 title: 'Full Stack Developer',
                 img: '../../../assets/img/creators/ACC - 1.jpg',
-                url: 'https://andrescollazosc.github.io/roulette-ss-game/',
+                url: 'https://andrescollazosc.github.io/proj-services-briefcase/',
                 socialMediaGitHub: 'https://github.com/andrescollazosc', 
                 socialMediaLinkeIn: 'https://www.linkedin.com/in/andres-collazos-66454076/'
             }
