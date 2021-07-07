@@ -11,6 +11,7 @@ export class CardCreatorsV1Mock {
                 name: 'Alejandro Martinez',
                 title: 'Full Stack Developer',
                 img: '../../../assets/img/creators/Alejandro.jpeg',
+                url: 'https://bamartinezd.github.io/Tricky-Game/',
                 socialMediaGitHub: 'https://github.com/bamartinezd', 
                 socialMediaLinkeIn: 'https://www.linkedin.com/in/bamartinezd'
             },
@@ -18,6 +19,7 @@ export class CardCreatorsV1Mock {
                 name: 'Andres Collazos',
                 title: 'Full Stack Developer',
                 img: '../../../assets/img/creators/ACC - 1.jpg',
+                url: 'https://andrescollazosc.github.io/roulette-ss-game/',
                 socialMediaGitHub: 'https://github.com/andrescollazosc', 
                 socialMediaLinkeIn: 'https://www.linkedin.com/in/andres-collazos-66454076/'
             }

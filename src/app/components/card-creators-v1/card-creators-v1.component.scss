@@ -1,6 +1,6 @@
 @import '../../styles/typography';
-.card-creator-container {
-    width: 100%;
+@import '../../styles/colors';
+.main-card-creator-container {
     height: auto;
     box-shadow: 2px 3px 10px 2px rgba(99, 118, 129, 0.3);
     display: flex;
@@ -8,10 +8,24 @@
     align-items: center;
     padding: 20px;
     border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
     &__image-container {
-        height: 150px;
-        width: 150px;
-        flex-grow: 1;
+        height: 100px;
+        width: 100px;
+        position: relative;
+    }
+    &__cover-image {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .4s;
+    }
+    &__cover-image:hover {
+        background: rgba(0, 0, 0, 0.5);
+        border: 3px solid $red-marvel-color;
     }
     &__image-container img {
         height: 100%;
@@ -21,12 +35,9 @@
     }
     &__panel-container {
         font-family: Roboto, Arial, sans-serif;
-        margin-top: 20px;
-        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
     &__name {
         font-weight: 600;
@@ -35,13 +46,22 @@
     &__title {
         font-weight: 400;
         font-size: 16px;
+        flex-grow: 1;
     }
+}
+
+.card-image-and-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .social-media {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: flex-end
 }
 
 .link-to {
