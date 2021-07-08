@@ -11,12 +11,17 @@ import { finalize } from 'rxjs/operators';
 export class CharactersComponent implements OnInit {
 
   public response: ResponseModel={};
+  public result: Result={};
   public isLoading: boolean = false;
 
   constructor(private characterService: CharacterService) {}
 
   ngOnInit(): void {
     this.getCharacters();
+  }
+
+  public getCharacter(value: Result):void {
+    this.characterService.setCharacter(value);
   }
 
   private getCharacters(): void {

@@ -1,4 +1,6 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Result } from '../../models/result.model';
+import { HomeCardModel } from '../../models/home-card.model';
 
 @Component({
   selector: 'app-first-cards',
@@ -7,20 +9,27 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class FirstCardsComponent implements OnInit {
 
-  @Input() urlImage: string="";
-  @Input() extension: string ="";
-  @Input() title: string ="";
+  @Input() resultModel: Result={};
+
+  @Output() homeCard = new EventEmitter<HomeCardModel>();
 
   public pathImg: string ="";
 
-  constructor() {}
-
   ngOnInit(): void {
-    if (this.urlImage === "" || this.urlImage === null) {
+    if (this.resultModel.thumbnail?.path === "" || this.resultModel.thumbnail?.path === null) {
       this.pathImg="../assets/img/Marvel-comics-logo-vector.png";
     }else {
-      this.pathImg = `${this.urlImage}.${this.extension}`;
+      this.pathImg = `${this.resultModel.thumbnail?.path}.${this.resultModel.thumbnail?.extension}`;
     }
+  }
+
+  public getCharacter(value: Result):void {
+    const homeCardModel: HomeCardModel={
+      title: value.name,
+      description: value.description,
+      img: this.pathImg
+    };
+    this.homeCard.emit(homeCardModel);
   }
 
 }

@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { CardCreatorsV1Component } from './components/card-creators-v1/card-creators-v1.component';
+import { CharacterComponent } from './pages/character/character.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CardCreatorsV1Component } from './components/card-creators-v1/card-crea
     HomeCardComponent,
     AboutUsComponent,
     SpinnerComponent,
-    CardCreatorsV1Component
+    CardCreatorsV1Component,
+    CharacterComponent
   ],
   imports: [
     BrowserModule,
