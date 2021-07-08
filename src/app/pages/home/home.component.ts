@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CardHomeMock } from 'src/app/mocks/card-home.mock';
+import { HomeCardModel } from 'src/app/models/home-card.model';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public cardHomeConfig: HomeCardModel = CardHomeMock.getInitialDataCardHome();
+
 
   ngOnInit(): void {
   }

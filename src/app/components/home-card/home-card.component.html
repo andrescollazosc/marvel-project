@@ -1,14 +1,14 @@
 <div class="home-card-container">
     <div class="home-card-container__text-container">
-        <div class="home-card-container__title">Marvel Comics</div>
+        <div class="home-card-container__title">{{ configCard.title }}</div>
         <div class="home-card-container__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis eaque nulla laboriosam quisquam repellat vel a deleniti, beatae cum illum consectetur doloribus consequatur dolores consequuntur sequi sit nisi aperiam laborum.
+            {{ configCard.description }}
         </div>
-        <button class="button button-marvel">Contact Us</button>
+        <button *ngIf="configCard.labelButton" class="button button-marvel">{{ configCard.labelButton }}</button>
     </div>
     <div class="home-card-container__image-container">
         <div class="home-card-container__panel-over-image"></div>
-        <img src="../../../assets/img/Avengers.jpg" alt="" />
+        <img [src]="configCard.img" alt="image" />
     </div>
 
 </div>
