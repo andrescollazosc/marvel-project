@@ -11,7 +11,7 @@ export class CardCreatorsV1Mock {
                 name: 'Alejandro Martinez',
                 title: 'Full Stack Developer',
                 img: '../../../assets/img/creators/Alejandro.jpeg',
-                url: 'https://bamartinezd.github.io/Tricky-Game/',
+                url: 'https://bamartinezd.github.io/cv/',
                 socialMediaGitHub: 'https://github.com/bamartinezd', 
                 socialMediaLinkeIn: 'https://www.linkedin.com/in/bamartinezd'
             },
